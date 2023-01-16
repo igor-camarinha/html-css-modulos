@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas e Audio</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+        <p>tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho so seu navegador.</p>
+
+        <picture>
+            <source media="(max-width:450px)" srcset="imagens/foto-pp.png" type="image/png">
+            <source media="(max-width: 550px )" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+            <img src="Imagens/foto-g.png" alt="Foto tamanho Grande">
+        </picture>
+        <h1>Reproduzindo audios em HTML5</h1>
+        <p>Para adicionar um audio basta adicionar a tag &lt;audio src="Caminho do arquivo" controls   autoplay&gt;</audio></p>
+        
+        <audio preload="metadata" controls loop >
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <source src="midia/guanacast-33.wav" type="audio/waw">
+        </audio>
+        <p>Caso não tenha conseguido ouvir o podcast! <a href="midia/guanacast-33.mp3">clique aqui para baixar .MP3</a> </p>
+        <p>
+            <pre>
+                <code>
+                    &lt;audio preload="metadata" controls autoplay >
+                        &lt;source src="midia/guanacast-33.mp3" type="audio/mpeg">
+                        &lt;source src="midia/guanacast-33.ogg" type="audio/ogg">
+                        &lt;source src="midia/guanacast-33.wav" type="audio/waw">
+                        p>Caso não tenha conseguido ouvir o podcast! <a href="midia/guanacast-33.mp3">clique aqui para baixar .MP3</a> </p>
+                    &lt;/audio>
+                </code>
+            </pre>
+        </p>
+        <p>No código acima caso o navegador vai tentar carregar o primeiro &lt;<mark>SOURCE</mark>&gt; , caso nao haja compatibilidade, ira tentar o proximo.</p>
+</body>
+</html>

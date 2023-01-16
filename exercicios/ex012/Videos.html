@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Esse video esta hospedado no meu proprio servidor/maquina.</p>
+
+    <video controls width="300" poster="midia/thumb.jpg" loop >
+        <source src="midia/video/Drift-mustang.mp4" type="video/mp4">
+        <source src="midia/video/Drift-Mustang.m4v" type="video/m4v">
+        <source src="midia/video/Drift-Mustang.webm" type="video/webm">
+        <source src="midia/video/Drift-mustang.ogg" type="video/ogg">
+        <p>Seu Navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+        <pre>
+            <code>
+                &lt;video controls width= "largura" poster="thumb do video.jpg" loop&gt;
+                    &lt;source:src="caminho do video" type="tipo de arquivo.mp4, m4v, webm, ogg etc"&gt;
+                    &lt;source src="caminho do video" type="tipo de arquivo"&gt;
+                    &lt;Use sempre os videos de menor tamanho, para consumir menos banda da hospedagem, o navegador vai usar os demais arquivos , apenas se nao conseguir reproduzir o primeiro arquivo que adicionou&gt;
+                &lt;/video&gt; 
+            </code>
+        </pre>
+    <h1>Adicionando videos hospedado no YOUTUBE/Vimeo</h1>
+     
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/HqI-K4jhc0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+    <pre>
+        <code>
+            <mark>h1>Inserindo videos hospedados localmente</mark>
+           <p>Para adicionar um video hospedado no proprio site(Usa Seu plano de Banda), recomendado hospedar no Youtube ou vimeo <br> Basta adicionar a tag <br> Em:&lt;video  <mark>controls (mostra os controles do player)</mark> <mark>width="largura"</mark>  <mark>poster="caminho da thumb"</mark> <br> SOURCE src="caminho do arquivo" type="tipo de arquivo" <mark>caso o navegador nao tenha compatibilidade ira abrir o source na ordem , o src="caminho do video" type="tipo de arquivo"</mark>
+        
+            &lt;video&gt; controls width="500" poster="midia/thumb.jpg" loop >
+                source src="midia/video/Drift-mustang.mp4" type="video/mp4">
+                source src="midia/video/Drift-Mustang.m4v" type="video/m4v">
+                source src="midia/video/Drift-Mustang.webm" type="video/webm">
+                source src="midia/video/Drift-mustang.ogg" type="video/ogg">
+                p>Seu Navegador não tem compatibilidade com reprodução de vídeos.
+           &lt;/video&gt;
+            
+            <mark>Adicionando videos hospedado no YOUTUBE/vimeo</mark>
+
+            iframe width="500" height="315" src="https://www.youtube.com/embed/HqI-K4jhc0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> /iframe>
+        </code>
+    </pre>
+    <p>Para adicionar um video hospedado no youtube, basta procurar o botao de Incorporar, la ja fica o codigo pronto do video escolhido</p>
+    <img src="Imagem1.png" alt="Guia de buscar o botao incorporar no youtube" width="450">
+    
+</body>
+</html>

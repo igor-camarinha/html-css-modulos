@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius:0px 20px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.19);
+        }
+        h1 {
+            box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.17);
+        }
+        nav {
+            background-color: rgb(91, 91, 91);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.286);
+            border-radius: 6px 6px;
+            text-align: center;
+
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+
+        }
+        nav > a:hover {
+            text-decoration:underline ;
+            color: aqua;
+            
+        }
+
+        
+        main {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius:10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.19);
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgba(83, 83, 83, 0.564);
+            
+        }
+        footer {
+            background-color: black;
+            color: bisque;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Fiat</a>
+            <a href="#">Ford</a>
+            <a href="#">Chevrolet</a>
+            <a href="#">BMW</a>
+            <a href="#">Nissan</a>
+            <a href="#">Mazda</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Preparação Restauração Personalização Documentação Achados</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Aceleros do Postinho</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas, cumque velit atque amet harum ipsam? Aspernatur et illum saepe culpa ut explicabo temporibus, quia necessitatibus quasi dolor harum delectus.</p>
+                <aside>
+                    <p>Atigo escrito por Camarinha</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por um Lunatico</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABALHANDO COM LINKS</title>
+</head>
+<body>
+    <h1>Usando Links externos</h1>
+        <p>Você pode acessar o meu repositório público no <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">github</a></p>
+
+        <p>Você também pode acessar site de videos como o <a href="https://www.youtube.com/" target="_blank" rel="external">YOUTUBE</a></p> <br>
+        
+        <p>Para colocar links externos em seu site utilize a tag: <br> <br>
+            <mark>&lt; a href=</mark>"link que deseja adicionar em seu site" <mark>target="</mark>parametro que seleciona se quer que o link abra em uma nova janela ou nao" <mark>rel="</mark>atributo que diz que o link e externo e nao pertence ao seu site "&gt; <mark>&lt;/a&gt;</mark>
+
+            <p>Para o link abrir em uma nova aba, na tag a indicar como parametro  target="_blank"</p>
+            <h3>EXEMPLOS DE TARGET</h3>
+           
+                <ul>
+                    <li>‣ _blank vai abrir o link em uma nova janela em branco</li>
+                    <li>‣ _self vai abrir o link na janela ou frame atual (padrão)</li>
+                    <li>‣ _top vai desfazer todos os frames e abrir o destino no navegador completo</li>
+                    <li>‣ _parent similar ao uso do _top em uma referência à janela mãe</li>
+                    <li>‣ nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir</li>
+            </ul>
+        <h1>Utilizando links internos</h1>
+            <p>voce pode navegar dentro do site. Ir para <a href="pagina02.html" rel="next">2ª Pagina</a></p>
+            <hr>
+        <h1>Links para Download</h1>
+            <p>Posso criar um link para download uitlizando a tag <br> &lt;a href="<mark style="background-color: rgb(127, 187, 217);">AQUI O CAMINHO DO ARQUIVO</mark>" dowload="<mark style="background-color: rgb(127, 187, 217);">ARQUIVO A SER BAIXADO</mark>" type="<mark style="background-color: rgb(127, 187, 217);">TIPO DE ARQUIVO A SER BAIXADO</mark>" &gt;&lt;/a&gt;</p>
+            <ul>
+                <li><a href="livro/10 - Ligações em toda parte.pdf" download="Aula.pdf" type="application.pdf">Baixar livro .PDF </a>
+                <li><a href="livro/10 - Ligações em toda parte.zip" download="Aula.zip" type="application.zip">Baixar livro .ZIP</a>
+            </ul>
+            </p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+        <h2>Código-Fonte/Pré formatação</h2>
+            <p>O comando <mark><code>document.getElementById('teste')</code></mark> <br> é escrito em linguagem JavaScript. <br> Para aparecer no navegador com formato de código, com as letras <mark>MONOESPAÇADA</mark> deve ser colocada a tag <mark>&lt;code&gt;&lt;/code&gt;</mark> </p>
+            <p>Para escrever exatamente como um código, com os espaços e quebras de linhas: <br> Antes da tag <mark>&lt;code&gt;&lt;/code&gt;</mark>, colocar a tag <mark>&lt;pre&gt;&lt;/pre&gt;</mark></p>
+            <h3>Exemplo</h3>
+
+            <pre>
+<code>
+    num = int(imput(Digite um Número))
+    if num % 2 == 0:
+else:
+        print(f'0 número {num} é ÍMPAR')
+print('Fim do programa')
+    
+</code>
+            </pre>
+        <h2>Citações simples</h2>
+            <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q><br>
+            quando foir colocar algo entre aspaas e melhor colocar a forma semantica que diz que aquele trecho é uma sitação <br>A tag para de citação se usa a tag <mark>&lt;q&gt;&lt;/q&gt;</mark></p>
+        <h2>Citações completas</h2>
+            <p>Segundo o autor mauricio, no seu livro Fundamentos de html:</p>
+            <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html5&printsec=frontcover">
+                Fundamentos de HTML5 e CSS3 tem o objetivo de fornecer aos iniciantes e estudantes da área de desenvolvimento web conceitos básicos e fundamentos da marcação HTML e estilização CSS, para a criação de sites, interfaces gráficas e ...
+            </blockquote>
+            <p>Para fazer esse tipo de citação deve se colocar a tag <mark>&lt;blockquote&gt;&lt;/blockquote&gt;</mark>e se quiser colocar o link do autor da citação ou local de refencia deve se colocar <mark>&lt;blockquote cite="aqui vai o link"&gt;</mark>, isso so diz aos mecanismos de busca , mas nao altera o visual do site</p>
+        <h2>Abreviações</h2>
+            <p>Para voce dizer ao navegador que um texto especifico é uma abreviação ex: <br></p>
+            <p>estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. estou adorando!. <br>, Isso e muito importate para os mecanismos de busca dizer ao usuario que existe um termo correto para aquela sigla ou <mark>abreviação</mark></p>
+            <p>Para adicionar uma abreviação ao codigo use a tag&lt;abbr title=""&gt;&lt;/abbr&gt;, dentro de title="aqui vai o termo texto não abreviado" </p>
+
+            &lt; &gt;
+</body>
+</html>
