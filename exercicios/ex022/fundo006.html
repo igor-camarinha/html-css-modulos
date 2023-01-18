@@ -7,17 +7,26 @@
     <title>Fundo 006</title>
     <style>
         body {
-            height: 100vh;
+            /* height: 100vh;
             background-color: black;
-            background-repeat: repeat-y;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-attachment: fixed ;
+            */
+
+            /*shorthand - backgroung
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black  url('imagens/wallpaper002.jpg') center center repeat-y  fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px  solid  darkblue;
