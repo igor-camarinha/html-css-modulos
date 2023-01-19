@@ -8,12 +8,12 @@
 }
 
 :root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1: Verdana, Tahoma, sans-serif;
     --fonte2: 'cordel';
     --fonte3: 'Sriracha', 'cursive';
     
 }
-* {
+ *{
     margin: 0px;
     padding: 0px;
     font-size: 1em;
@@ -44,7 +44,7 @@ header a, footer a {
     text-decoration: none;
     font-weight: bolder;
 }
-header a:hover , footer a:hover{
+header a:hover , footer a:hover {
     text-decoration: underline;
 }
 section {
