@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 14</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th , td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+        caption {
+            font-size: 1,3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        thead {
+            background-color: rgb(93, 93, 93);
+            color: white;
+        }
+        #media1 , #media2 {
+            background-color:  rgb(93, 93, 93);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio Tabelas /14</h1>
+    <table>
+        <caption></caption>
+        <thead>
+            <tr>
+                <th rowspan="3" scope="col">Área</th>
+                <th rowspan="3" scope="col">Diciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th colspan="1" scope="col">AV 01</th>
+                <th colspan="1" scope="col">AV 02</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matematica</td>
+                <td>6</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>5</td>
+                <td>4</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>5</td>
+                <td>7</td>
+                <td>9</td>
+            </tr>
+            <tr id="media1">
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Humanas</th>
+                <td>Historia</td>
+                <td>9</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>6</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Portugues</td>
+                <td>6</td>
+                <td>9</td>
+                <td>8,75</td>
+            </tr>
+            <tr>
+                <td>Sociologia</td>
+                <td>10</td>
+                <td>9</td>
+                <td>9,5</td>
+            </tr>
+            <tr id="media2">
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td>9,5</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
