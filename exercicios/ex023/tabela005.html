@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th , td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        caption {
+            font-size: 1,3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+        col.cnome {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicios de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Igor</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Analista de Implantação</td>
+            </tr>
+            <tr>
+                <td>Tiago</td>
+                <td>M</td>
+                <td>44</td>
+                <td>Policial</td>
+            </tr>
+            <tr>
+                <td>Gerusa</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Analista financiero</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>F</td>
+                <td>24</td>
+                <td>Fisioterapeuta</td>
+            </tr>
+            <tr>
+                <td>Isabela</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Vendedora</td>
+            </tr>
+            <tr>
+                <td>Ricardo</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Caio</td>
+                <td>M</td>
+                <td>26</td>
+                <td>Fotografo</td>
+            </tr>
+            <tr>
+                <td>Caroline</td>
+                <td>F</td>
+                <td>23</td>
+                <td>Dermatologa</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
