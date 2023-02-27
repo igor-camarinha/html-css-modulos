@@ -7,6 +7,25 @@
     <title>formulario 006</title>
 </head>
 <body>
-    <h1>Parte final de formulario</h1>
+    <h1>Parte final de formulario (cor/range)</h1>
+
+    <form action="cadastro.php">
+        <fieldset>
+            <p>
+                <input type="color" name="cor" id="icor">
+                <label for="icor">Cor</label>
+            </p>
+            <br>
+            <p>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="0">
+                <label for="inivel">Nivel de Satisfação (range)</label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+        
+    </form>
 </body>
 </html>
