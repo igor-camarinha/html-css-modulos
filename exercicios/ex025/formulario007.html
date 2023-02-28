@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 007</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                    <option value="AC">ACRE</option>
+                    <option value="AL">ALAGOAS</option>
+                    <option value="AP">AMAPÁ</option>
+                    <option value="AM">AMAZONAS</option>
+                    <option value="BA">BAHIA</option>
+                    <option value="CE">CEARÁ</option>
+                    <option value="DF">DISTRITO FEDERAL</option>
+                    <option value="ES">ESPÍRITO SANTO</option>
+                    <option value="GO">GOIÁS</option>
+                    <option value="MA">MARANHÃO</option>
+                    <option value="MT">MATO GROSSO</option>
+                    <option value="MS">MATO GROSSO DO SUL</option>
+                    <option value="MG">MINAS GERAIS</option>
+                    <option value="PA">PARÁ</option>
+                    <option value="PB">PARAÍBA</option>
+                    <option value="PR">PARANÁ</option>
+                    <option value="PE">PERNAMBUCO</option>
+                    <option value="PI">PIAUÍ</option>
+                    <option value="RJ">RIO DE JANEIRO</option>
+                    <option value="RN">RIO GRANDE DO NORTE</option>
+                    <option value="RS">RIO GRANDE DO SUL</option>
+                    <option value="RO">RONDÔNIA</option>
+                    <option value="RR">RORAIMA</option>
+                    <option value="SC">SANTA CATARINA</option>
+                    <option value="SP" selected>Ñ EXISTE AMOR EM SP</option>
+                    <option value="SE">SERGIPE</option>
+                    <option value="TO">TOCANTINS</option>
+                </select>
+            </p>
+            <P>
+                <label for="iest">Estado / REGIAO</label>
+                <select name="estado" id="iest">
+                    <option value="" selected> - - - escolha - - - </option>
+                <optgroup label="NORTE">
+                    <option value="AC">ACRE</option>
+                    <option value="AP">AMAPÁ</option>
+                    <option value="AM">AMAZONAS</option>
+                    <option value="PA">PARÁ</option>
+                    <option value="RO">RONDÔNIA</option>
+                    <option value="RR">RORAIMA</option>
+                    <option value="TO">TOCANTINS</option>
+                </optgroup>
+                <optgroup label="NORDESTE">
+                    <option value="AL">ALAGOAS</option>
+                    <option value="BA">BAHIA</option>
+                    <option value="CE">CEARÁ</option>
+                    <option value="MA">MARANHÃO</option>
+                    <option value="PB">PARAÍBA</option>
+                    <option value="PE">PERNAMBUCO</option>
+                    <option value="PI">PIAUÍ</option>
+                    <option value="RN">RIO GRANDE DO NORTE</option>
+                    <option value="SE">SERGIPE</option>
+                </optgroup>
+                <optgroup label="CAPITAL">
+                    <option value="DF">DISTRITO FEDERAL</option>
+                </optgroup>
+                <optgroup label="CENTRO-OESTE">
+                    <option value="GO">GOIÁS</option>
+                    <option value="MT">MATO GROSSO</option>
+                    <option value="MS">MATO GROSSO DO SUL</option>
+                </optgroup>
+                <optgroup label="SUDESTE">
+                    <option value="ES">ESPÍRITO SANTO</option>
+                    <option value="MG">MINAS GERAIS</option>
+                    <option value="RJ">RIO DE JANEIRO</option>
+                    <option value="SP">SAMPA</option>
+                </optgroup>
+                <optgroup label="SUL">
+                    <option value="PR">PARANÁ</option>
+                    <option value="RS">RIO GRANDE DO SUL</option>
+                    <option value="SC">SANTA CATARINA</option>
+                </optgroup>
+                </select>
+            </P>
+            <p>
+                <label for="iprof">Profissao</label>
+                <input type="text" name="prof" id="iprof" list="listadeprof">
+                <datalist id="listadeprof">
+                    <option>Administração</option>
+                    <option>Contador</option>
+                    <option>Desenvolvedor</option>
+                    <option>Professor</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">MENSAGEM</label>
+                <textarea name="msg" id="imsg" cols="30" rows="5" placeholder="escreva sua mensagem aqui"></textarea>
+            </p>
+        </fieldset>
+    </form>
+    
+    <p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </p>
+</body>
+</html>
