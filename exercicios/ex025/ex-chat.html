@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+  background-color: #8E24AA;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+form img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+form h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+form input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  
+}
+
+form button {
+  background-color: #8E24AA;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #7B1FA2;
+}
+
+form a {
+  color: #8E24AA;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  form {
+    width: 80%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+          <img src="nubank-logo-2021.svg" alt="Nubank">
+          <h1>Entre na sua conta</h1>
+          <input type="email" placeholder="E-mail">
+          <input type="password" placeholder="Senha">
+          <button>Entrar</button>
+          <a href="#">Esqueceu sua senha?</a>
+        </form>
+      </div>
+      
+</body>
+</html>
